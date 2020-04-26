@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
 })
 export class PaymentDetailComponent implements OnInit {
 
-  constructor(private service: PaymentDetailService) { }
+  constructor(public service: PaymentDetailService) { }
 
   ngOnInit() {
     this.resetForm();
