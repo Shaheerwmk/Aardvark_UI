@@ -9,6 +9,11 @@ import { PaymentDetailListComponent } from './payment-details/payment-detail-lis
 import { PaymentDetailService } from './shared/payment-detail.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
+import {DropdownModule} from 'primeng/dropdown';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { OverlayModule} from '@angular/cdk/overlay';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import { HttpClientModule } from "@angular/common/http";
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    DropdownModule,
+    BrowserAnimationsModule,
+    OverlayModule,
+    MatButtonModule,
+    MatSliderModule
   ],
   providers: [PaymentDetailService],
   bootstrap: [AppComponent]
